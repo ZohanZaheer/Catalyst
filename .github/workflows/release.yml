@@ -156,7 +156,7 @@ jobs:
             doomed too (no internet, low disk space). Dev builds show the commit
             hash + date instead of the version number.
 
-            Full details: [CHANGELOG.md](https://github.com/Antoinenz/Catalyst/blob/master/CHANGELOG.md)
+            Full details: [CHANGELOG.md](https://github.com/ZohanZaheer/Catalyst/blob/master/CHANGELOG.md)
 
             ### Installing
 
@@ -175,7 +175,7 @@ jobs:
             **Linux AppImage:** Run `chmod +x Catalyst_*.AppImage` if needed.
 
             ---
-            Full changelog: https://github.com/Antoinenz/Catalyst/commits
+            Full changelog: https://github.com/ZohanZaheer/Catalyst/commits
           releaseDraft: false
           prerelease: true
           args: ${{ matrix.args }}

@@ -77,7 +77,7 @@ async fn do_update_check() -> Option<String> {
         .user_agent(concat!("catalyst/", env!("CARGO_PKG_VERSION")))
         .build().ok()?;
     let resp: serde_json::Value = client
-        .get("https://api.github.com/repos/Antoinenz/Catalyst/releases/latest")
+        .get("https://api.github.com/repos/ZohanZaheer/Catalyst/releases/latest")
         .send().await.ok()?.json().await.ok()?;
     if resp["message"].as_str().is_some() { return None; } // 404 / no releases
     let tag = resp["tag_name"].as_str()?;
